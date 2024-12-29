@@ -110,7 +110,7 @@ html,body {
         color: black;
         text-align: left;
         margin: 0px;
-        padding-left: 10px; /* Lisää 10 pikselin tyhjän tilan vasemmalle */
+        padding-left: 15px; /* Lisää 10 pikselin tyhjän tilan vasemmalle */
     }
 
     #index-page .row,
