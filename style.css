@@ -7,97 +7,82 @@ html,body {
     font-family: "Open sans", sans-serif;
     background-color: rgb(230, 214, 230);
 }
-
 :root {
-    color-scheme: light; /* Käytä aina vaaleaa teemaa */
-  }
-
-  ul { /*Navigaatiopalkki, tausta ja lista*/
+    color-scheme: light;
+}
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-
 }
-
-  li { /*Navigaatiopalkki tää liittyy siihen miten se ui eri näytöillä! Center on nimenomaan se yläpalkki, muuta tää niin menee sivulle!!*/
+  li {
     float: center;
 }
-  
-  li a { /*Navigaatiopalkki teksti*/
+  li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-  
-  li a:hover:not(.active) { /*Navigaatiopalkki hiiren liikuttamisen väri*/
+  li a:hover:not(.active) {
     background-color: #111;
 }
-  .active { /*Navigaatiopalkki aktiivisen palkin väri*/
+  .active {
     background-color: #6b4c6e;
 }
-
   header {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url("tausta1.jpg"); /* Tämä linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), on taustan tummennus, voi poistaa jos haluaa kirkkaamman*/
+    background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url("tausta1.jpg");
     background-position: center;
     background-size: cover;
     margin: 0;
     padding: 50px 0 0 0;
     width: 100%;
     position: relative;
-    /*Taustabannerin kuva ja sijainti*/
 }
-
   header h1 {
     font-size: 70px;
     text-align: center;
     color: white;
     padding: 150px 10px 150px 10px;  
-    /* Taustabannerin koko ja väri*/
 }
     section {
     font-size: 24px;
     width: 90%;
-    margin: 0 auto; /* Keskittää sectionin sivulle eli tekstin ympärillä on molemmin puolin tilaa */
+    margin: 0 auto;
     padding-bottom: 50px;
 }
     h2.lead {
     font-size: 40px;
-    text-align: center; /* Keskittää otsikon Portfolio ja Contact keskelle sivua */
-    margin-bottom: 20px; /* Lisää väliä otsikon ja muun sisällön väliin */
+    text-align: center;
+    margin-bottom: 20px;
 }
     h3.coming-soon {
     font-size: 50px;
-    text-align: center; /* Keskittää myös Coming soon otsikon */
+    text-align: center;
     color: rgb(140, 92, 138);
 }
     #contact-page section p {
-        text-align: center;  /* Keskittää tekstin */
-        margin: 0 auto;  /* Varmistaa, että teksti on keskitetty vaakasuunnassa */
+        text-align: center; 
+        margin: 0 auto;
         margin-bottom: 20px;
 }
-
     section.quote p {
         font-size: 36px;
-        font-family: 'Caveat', cursive; /* Caveat-fontti */
+        font-family: 'Caveat', cursive;
         color: rgb(140, 92, 138);
 }
-
     #contact-page img { 
         max-width: 100%;
         margin: 20px auto;
         width: 100%;
 }
-
-
     #portfolio-page section p {
         text-align: center
 }
-
-    footer { /*Footerin taustaväri ja sijainti*/
+    footer {
         background-color: rgb(127, 104, 147);
         margin: 0;
         padding: 50px 0;
@@ -105,99 +90,89 @@ html,body {
         position: relative;
         background-size: cover;
 }
-    
-    footer p { /*Footerin tekstin sijainti ja värit yms*/
+    footer p {
         color: black;
         text-align: left;
         margin: 0px;
-        padding-left: 15px; /* Lisää 10 pikselin tyhjän tilan vasemmalle */
+        padding-left: 10px;
     }
-
     #index-page .row,
     #about-page .row {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Keskittää sisällön pystysuunnassa */
-    text-align: center; /* Keskittää tekstin */
+    align-items: center;
+    text-align: center;
 }
-
     #index-page .column img,
     #about-page .column img {
-    max-width: 100%; /* Skaalaa kuva responsiivisesti */
+    max-width: 100%;
     height: auto;
-    margin-bottom: 20px; /* Lisää väliä kuvan ja tekstin välille */
+    margin-bottom: 20px;
 }
-
     #index-page .column,
     #about-page .column {
-    margin: 10px; /* Lisää hieman tilaa kolumnien ympärille */
+    margin: 10px;
 }
-
     @media only screen and (max-width: 650px) {
         #index-page .row,
         #about-page .row {
-            text-align: left; /* Teksti tasataan vasemmalle */
-            align-items: flex-start; /* Tasoittaa sisällön yläreunasta, eli tekstin ja kuvan balanssia */
+            text-align: left;
+            align-items: flex-start;
         }
 
         #contact-page img {
-            width: 350px; /* Kuvan tarkka leveys mobiilinäkymässä */
-            height: auto; /* Säilyttää kuvan mittasuhteet */
-            display: block; /* Varmistaa, että kuva on omalla rivillään */
-            margin: 0 auto; /* Keskittää kuvan */
+            width: 350px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
 }
-
     @media only screen and (min-width: 651px) and (max-width: 1024px) {
-        li { /*Navigaatiopalkki tää liittyy siihen miten se ui eri näytöillä! Center on nimenomaan se yläpalkki, muuta tää niin menee sivulle!!*/
+        li {
             float: left;
         }
         #index-page .row,
         #about-page .row {
-            flex-direction: column; /* Asettaa tekstin ja kuvan päällekkäin */
-            align-items: center; /* Keskittää sisällön vaakasuunnassa */
-            text-align: left; /* Tasaa tekstin vasemmalle */
-            width: 90%; /* Rajoittaa sisällön leveyttä, jotta rivittyminen näyttää paremmalta */
-            margin: 0 auto; /* Keskittää kaiken sisällön suhteessa näyttöön */
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            width: 90%;
+            margin: 0 auto;
          }
-
         #index-page .column,
         #about-page .column {
-            flex: none; /* Poistaa tasaisen tilanjaon */
-            margin-bottom: 20px; /* Lisää väliä kolumnien väliin */
+            flex: none;
+            margin-bottom: 20px;
         }
-
         #index-page .column img,
         #about-page .column img {
-            max-width: 80%; /* Skaalaa kuvaa hieman pienemmäksi */
+            max-width: 80%;
             height: auto;
         }
 
         #about-page .column img {
-            width: 600px; /* Kuva on kiinteästi 200 pikseliä leveä mobiilissa */
-            height: auto; /* Säilyttää mittasuhteet */
-            display: block; /* Varmistaa, että kuva on omalla rivillään */
-            margin: 0 auto; /* Keskittää kuvan */
+            width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
-
         #contact-page img {
-            width: 350px; /* Kuvan tarkka leveys mobiilinäkymässä */
-            height: auto; /* Säilyttää kuvan mittasuhteet */
-            display: block; /* Varmistaa, että kuva on omalla rivillään */
-            margin: 0 auto; /* Keskittää kuvan */
+            width: 350px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
 }
     @media only screen and (min-width: 1025px) {
-
-        li { /*Navigaatiopalkki tää liittyy siihen miten se ui eri näytöillä! Center on nimenomaan se yläpalkki, muuta tää niin menee sivulle!!*/
+        li {
             float: left;
         }
         #index-page .row,
         #about-page .row {
-            flex-direction: row; /*Sijoittaa tekstin oikealle, pidä tää */
-            align-items: flex-start; /* Tasoittaa sisällön yläreunasta, eli tekstin ja kuvan balanssia */
-            text-align: left; /* Teksti tasataan vasemmalle */
-            width: 85%; /*Tekstin sjaintia suhteessa kuvaan, lähellä vai kaukana. Tätä pitää säätäää */
+            flex-direction: row;
+            align-items: flex-start;
+            text-align: left;
+            width: 85%;
             margin: 0 auto;
         }
         #index-page .column,
@@ -206,27 +181,25 @@ html,body {
             margin-left: 5%;
         }
         #index-page .column:first-child {
-        flex: 0 0 35%; /* Kuvan sarake saa olla 35% leveä, ei muutu */
+        flex: 0 0 35%;
         margin-top: 50px;
         }
-        #index-page .column:last-child { /* Tekstin sarake */
+        #index-page .column:last-child {
         flex: 1;
         }
-        #index-page .column img {  /* Kuvan maksimi leveys säilyy */
+        #index-page .column img {
         max-width: 100%;
         height: auto;
         }
-
         #about-page .column img {
-            width: 500px; /* Kuva on kiinteästi 200 pikseliä leveä mobiilissa */
-            height: auto; /* Säilyttää mittasuhteet */
-            display: block; /* Varmistaa, että kuva on omalla rivillään */
-            margin: 0 auto; /* Keskittää kuvan */
+            width: 500px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
-
         #contact-page img {
-            max-width: 30%; /* Rajoittaa kuvan leveyttä, säilyttää oikeat mittasuhteet */
-            display: block; /* Varmistaa, että kuva on loogisesti erillään muista elementeistä */
+            max-width: 30%;
+            display: block;
 
         }
     }
