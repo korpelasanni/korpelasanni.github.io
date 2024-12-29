@@ -8,6 +8,10 @@ html,body {
     background-color: rgb(230, 214, 230);
 }
 
+:root {
+    color-scheme: light; /* Käytä aina vaaleaa teemaa */
+  }
+
   ul { /*Navigaatiopalkki, tausta ja lista*/
     list-style-type: none;
     margin: 0;
@@ -106,6 +110,7 @@ html,body {
         color: black;
         text-align: left;
         margin: 0px;
+        padding-left: 10px; /* Lisää 10 pikselin tyhjän tilan vasemmalle */
     }
 
     #index-page .row,
