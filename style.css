@@ -118,7 +118,7 @@ html,body {
 }
 #portfolio-page .column {
     background-color: #f9f9f9;
-    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.5);
     margin: 20px;
 }
 #portfolio-page .column h4 {
@@ -142,8 +142,10 @@ html,body {
             flex-direction: column;
         }
         #portfolio-page .column {
-            margin: 10px 0; /*margin: 0 10px; Välit sarakkeiden välillä TÄÄ KAIKKIIN NÄKYMIIN!!! Muokkaa sen millaista rajaa on eri näkymissä */
+            margin: 10px 0;
             width: 100%;
+            background-color:rgb(230, 214, 230);
+            box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.7);
         }
 }
     @media only screen and (min-width: 651px) and (max-width: 1024px) {
